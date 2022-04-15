@@ -5,9 +5,186 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <title>Admin Dashboard</title>
 </head>
 <body>
-<script src="javascript.js"></script>
+    <div id="header">
+        <div id="search-area">
+            <form id="search-bar">
+                <button id="favorite">🔎</button>
+                <input type="search" id="search-input">
+            </form>
+            <div id="user-area">
+                <p>🔔</p>
+                <p id="profile-pic-small">🐱</p>
+                <p>Aaron Omary</p>
+            </div>
+        </div>
+        <div id="post-area">
+            <div id="user-blurb">
+                <p id="profile-pic">🐱</p>
+                <div>
+                    <p id="hello-small">Hi there,</p>
+                    <p id="name-large">Aaron Omary (@aarono)</p>
+                </div>
+            </div>
+            <div id="share-buttons">
+                <button class="share-button">New</button>
+                <button class="share-button">Upload</button>
+                <button class="share-button">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <div id="logo">🐈 Dashboard</div>
+        <ul id="mainmenu">
+            <div id="uppermenu">
+                <li class="menu-item">🏠 Home</li>
+                <li class="menu-item">👤 Profile</li>
+                <li class="menu-item">💬 Messages</li>
+                <li class="menu-item">⏰ History</li>
+                <li class="menu-item">📝 Tasks</li>
+                <li class="menu-item">😃 Communities</li>
+                <li class="menu-item" id="lowermenu">⚙️ Settings</li>
+                <li class="menu-item">❓ Support</li>
+                <li class="menu-item">🛡️ Privacy</li>
+            </div>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="your-projects">
+            <h2>Your Projects</h2>
+            <div id="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-header">Header</h3>
+                        <p class="card-body"> Sed tempus ut lacus ut scelerisuqe suspendisse sollicitudin nib erat, id, facilisis felis accumas nec.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button id="favorite">⭐</button>
+                        <button id="save">👁️</button>
+                        <button id="share">🔗</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-header">Header</h3>
+                        <p class="card-body"> Sed tempus ut lacus ut scelerisuqe suspendisse sollicitudin nib erat, id, facilisis felis accumas nec.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button id="favorite">⭐</button>
+                        <button id="save">👁️</button>
+                        <button id="share">🔗</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-header">Header</h3>
+                        <p class="card-body"> Sed tempus ut lacus ut scelerisuqe suspendisse sollicitudin nib erat, id, facilisis felis accumas nec.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button id="favorite">⭐</button>
+                        <button id="save">👁️</button>
+                        <button id="share">🔗</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-header">Header</h3>
+                        <p class="card-body"> Sed tempus ut lacus ut scelerisuqe suspendisse sollicitudin nib erat, id, facilisis felis accumas nec.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button id="favorite">⭐</button>
+                        <button id="save">👁️</button>
+                        <button id="share">🔗</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-header">Header</h3>
+                        <p class="card-body"> Sed tempus ut lacus ut scelerisuqe suspendisse sollicitudin nib erat, id, facilisis felis accumas nec.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button id="favorite">⭐</button>
+                        <button id="save">👁️</button>
+                        <button id="share">🔗</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-header">Header</h3>
+                        <p class="card-body"> Sed tempus ut lacus ut scelerisuqe suspendisse sollicitudin nib erat, id, facilisis felis accumas nec.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button id="favorite">⭐</button>
+                        <button id="save">👁️</button>
+                        <button id="share">🔗</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="announcments">
+            <h2>Announcements</h2>
+            <div id="announcements-container">
+                <div id="announced-content">
+                    <div class="announced-item">
+                        <h3 class="a-header">Header</h3>
+                        <p class="a-body"> Sed tempus ut lacus ut scelerisuqe suspendisse sollicitudin nib erat, id, facilisis felis accumas nec.</p>
+                    </div>
+
+                    <div class="announced-item">
+                        <h3 class="a-header">Header</h3>
+                        <p class="a-body"> Sed tempus ut lacus ut scelerisuqe suspendisse sollicitudin nib erat, id, facilisis felis accumas nec.</p>
+                    </div>
+
+                    <div class="announced-item last">
+                        <h3 class="a-header">Header</h3>
+                        <p class="a-body"> Sed tempus ut lacus ut scelerisuqe suspendisse sollicitudin nib erat, id, facilisis felis accumas nec.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="trending">
+            <h2>Trending</h2>
+            <div id="trending-container">
+                <div id="trending-content">
+                <div class="trending-item">
+                    <p id="profile-pic-small">🐱</p>
+                    <div>
+                        <h3 class="t-header">@username</h3>
+                        <p class="t-body"> Summary Text</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <p id="profile-pic-small">🐱</p>
+                    <div>
+                        <h3 class="t-header">@username</h3>
+                        <p class="t-body"> Summary Text</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <p id="profile-pic-small">🐱</p>
+                    <div>
+                        <h3 class="t-header">@username</h3>
+                        <p class="t-body"> Summary Text</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <p id="profile-pic-small">🐱</p>
+                    <div>
+                        <h3 class="t-header">@username</h3>
+                        <p class="t-body"> Summary Text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
 </body>
 </html>

@@ -1,0 +1,154 @@
+/* global css */
+body{
+    display:grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: 18vh 82vh;
+    font-family: "Sofia", sans-serif;
+    margin:0;
+}
+
+/* header css */
+#header{
+    display:flex;
+    flex-direction: column;
+    grid-area: 1 / 2 / 2 / 3;
+    background-color:white;
+    padding:15px;
+}
+#search-area{
+    display:flex;
+    justify-content: space-between;
+}
+#search-bar{
+    width:80%;
+}
+#user-area{
+    display:flex;
+    height:25px;
+    align-items: center;
+    gap:10px;
+}
+#post-area{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hello-area{
+    gap:10px;
+}
+#user-blurb{
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+#hello-small{
+    font-size:12px;
+    margin-bottom:-20px;
+}
+#name-large{
+    font-size:20px;
+}
+#profile-pic{
+    font-size:40px;
+}
+#profile-pic-small{
+    font-size:25px;
+}
+#share-buttons{
+    display:flex;
+    gap:20px;
+}
+.share-button{
+    background-color: orange;
+    font-size: 13px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* sidebar css */
+#sidebar{
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: rgb(241, 83, 21);
+    padding:15px;
+}
+#mainmenu{
+    color:white;
+    list-style-type:none;
+    padding:0px;
+}
+#uppermenu{
+    display:flex;
+    gap:15px;
+    flex-direction: column;
+}
+#lowermenu{
+    margin-top:20px;
+}
+#logo {
+    font-size:30px;
+    color:white;
+}
+
+/* content area css */
+#content{
+    display:grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: 350px 350px; 
+    background-color:rgb(238, 238, 245);
+    padding:15px;
+}
+#card-container{
+    display:grid;
+    grid-area: 1/1/3/2;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:15px;
+}
+
+.card{
+    background-color:white;
+    padding:15px;
+    border-radius:10px
+}
+.card-header{
+    font-size:16px;
+}
+.card-body{
+    font-size:13px;
+}
+#announcments{
+    grid-area:1/2/2/3;
+    padding-left:15px;
+}
+#announcements-container{
+    background-color:white;
+    padding:15px;
+    border-radius:10px
+}
+.announced-item{
+    border-bottom:solid rgb(206, 206, 206);
+}
+.a-body, .t-body{
+    font-size:10px;
+}
+.a-header, .t-header{
+    font-size:12px;
+    margin-bottom:-10px;
+}
+#trending{
+    grid-area:2/2/3/3;
+    padding-left:15px;
+}
+#trending-container{
+    background-color:white;
+    padding:15px;
+    border-radius:10px;
+}
+.trending-item{
+    display:flex;
+    gap:10px;
+    align-items: center;
+    margin-bottom:-30px;
+}
